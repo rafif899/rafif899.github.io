@@ -1,0 +1,392 @@
+body {
+	width: 970px;
+	margin: 15px auto 0px auto;
+	padding: 0px;
+	background: #C8D9CB;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #000000;
+	font-size: 75%;
+
+	text-align: left;
+
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	min-height: 645px;/* atau sesuai kebutuhan */
+	position: relative;
+	background-color: #ffffffb5;
+	border-radius: 7px;
+	overflow-x: auto;
+}
+
+.header {
+	background: url(images/header\ siak.png);
+	width: 100%;
+	height: 150px;
+	position: absolute;
+	font-size: 1em;
+	/* default 12px */
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+
+.header_text {
+	padding-top: 130px;
+	padding-left: 5px;
+}
+
+.header a {
+	display: inline;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.header a:hover {
+	color: brown;
+}
+
+a {
+	font-size: 1em;
+	text-decoration: none;
+}
+
+
+
+.left {
+
+	float: left;
+	width: 180px;
+	min-height: 100%;
+	margin: 165px 8px 30px 25px;
+	/* 25<->180<->8 => for aligning text */
+	display: inline;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	/* default 12px */
+	border-right: 1px solid #465575;
+	/* Tambahkan garis vertikal */
+
+}
+
+.left li {
+	margin-bottom: 9px;
+	list-style-type: none;
+	line-height: 1.4em;
+	white-space: nowrap;
+	box-sizing: border-box;
+	font-weight: bold;
+	font-size: 15px;
+	
+}
+
+.left li a:hover {
+	color: #d7dce0;
+	display: inline-block;
+	padding-right: 65%;
+	background-color: #465575;
+	border-radius: 5px;
+	white-space: nowrap;
+	line-height: 1.4em;
+	vertical-align: middle;
+	max-width: 60px;
+}
+
+.left ul {
+	padding: 0px;
+}
+
+.left li a {
+	color: #465575;
+
+	
+}
+
+.left h2 {
+	color: brown;
+}
+
+.right {
+	float: right;
+	width: 707px;
+	min-height: 320px;
+	margin: 165px 10px 30px 20px;
+	/* 20<->707<->[RM,0-30] => for aligning text, [RM<=10] for IE <=6.0 workaround */
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	/* default 12px */
+
+	max-width: 100%;
+	/* Batasi lebar agar tidak melampaui layar */
+	box-sizing: border-box;
+	/* Hitung padding dan border dalam ukuran elemen */
+}
+
+
+.menu_icon {
+	display: flex;
+	/* Menggunakan flexbox */
+	flex-wrap: wrap;
+	/* Baris baru jika ruang tidak cukup */
+	justify-content: left;
+	/* Pusatkan elemen secara horizontal */
+	gap: 10px;
+	/* Jarak antar kotak */
+	text-align: center;
+}
+
+.menu_icon a {
+	display: flex;
+	/* Gunakan flexbox untuk elemen di dalam */
+	flex-direction: column;
+	/* Atur elemen vertikal (ikon di atas, teks di bawah) */
+	align-items: center;
+	/* Pusatkan ikon dan teks secara horizontal */
+	justify-content: center;
+	/* Pusatkan elemen secara vertikal */
+	width: 135px;
+	/* Lebar kotak */
+	height: 162px;
+	/* Tinggi kotak */
+	border: 2px solid #0b2356;
+	/* Garis kotak berwarna biru gelap */
+	margin: 10px;
+	/* Jarak antar kotak */
+	background-color: #ffffff5d;
+	/* Latar belakang putih */
+	border-radius: 8px;
+	/* Sudut kotak melengkung */
+	box-sizing: border-box;
+	/* Termasuk padding dan border ke dalam ukuran */
+	text-decoration: none;
+	/* Hilangkan garis bawah pada teks */
+	color: #465575;
+	/* Warna teks */
+	font-size: 12px;
+	/* Ukuran font */
+	font-weight: bold;
+	/* Tebalkan teks */
+	transition: transform 0.2s, background-color 0.3s;
+	/* Animasi hover */
+}
+
+.menu_icon a img {
+	width: 50px;
+	/* Ukuran ikon */
+	height: 50px;
+	margin-bottom: 10px;
+	/* Jarak antara ikon dan teks */
+}
+
+.menu_icon a:hover {
+	background-color: #0b235662;
+	box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.judul_page img {
+	padding-inline: 3px;
+	padding-right: 4px;
+}
+
+.judul_page a {
+	color: #465575;
+	font-weight: bold;
+}
+
+.judul_page a:hover {
+	color: brown
+}
+
+.menu_daftar {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.menu_daftar a {
+	padding: 8px 12px;
+	/* Memberikan padding lebih nyaman */
+	display: inline-block;
+	/* Membuat elemen terlihat sebagai tombol */
+	width: auto;
+	/* Menghapus pengaturan lebar tetap */
+	height: auto;
+	/* Menghapus pengaturan tinggi tetap */
+	border: 1px solid #465575;
+	/* Warna border sesuai tema */
+	background-color: #ffffff;
+	/* Latar belakang putih */
+	color: #465575;
+	/* Warna teks sesuai tema */
+	border-radius: 5px;
+	/* Membuat sudut melengkung */
+	font-weight: bold;
+	/* Teks lebih tebal */
+	text-align: center;
+	/* Pusatkan teks */
+	text-decoration: none;
+	/* Hilangkan garis bawah */
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+	/* Tambahkan bayangan */
+	transition: all 0.3s ease;
+	/* Animasi transisi saat hover */
+}
+
+.menu_daftar a:hover {
+	background-color: #465575;
+	/* Ubah warna latar saat hover */
+	color: #ffffff;
+	/* Ubah warna teks saat hover */
+	box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+	/* Tambahkan bayangan lebih besar */
+	transform: scale(1.05);
+	/* Sedikit memperbesar ukuran tombol */
+}
+
+
+
+
+.daftar_tabel table {
+	height: auto;
+	width: 100%;
+	border-collapse: collapse;
+	/* Hapus ruang antara border */
+
+}
+
+
+
+.daftar_tabel a {
+	color: #465575;
+	background-color: #d7dce0;
+	border: 1px solid #000000;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	border-radius: 5px;
+}
+
+.daftar_tabel a:hover {
+	color: #eaecf0;
+	background-color: #0b2356;
+}
+
+.daftar_tabel th {
+	text-align: center;
+	background-color: #465575;
+	color: #fbfbfb;
+	padding: 8px;
+}
+
+.daftar_tabel td {
+	text-align: left;
+	/* Sesuaikan perataan teks */
+	padding: 8px;
+	/* Tambahkan padding untuk memberikan ruang */
+	word-wrap: break-word;
+	/* Pastikan teks tidak meluap */
+}
+
+.daftar_tabel tr:hover {
+	background-color: #465575;
+	color: #eaecf0;
+}
+
+.daftar_tabel h3 {
+	color: #0b2356;
+}
+
+
+
+.opsi form {
+	padding: 20px;
+	color: #0b2356;
+	font-weight: bold;
+	display: block;
+	text-align: center;
+	
+}
+
+.opsi select{
+	margin:10px;
+}
+
+.opsi option {
+	color: #0b2356;
+
+}
+
+.opsi button {
+	border-radius: 5px;
+	color: #0b2356;
+	background-color: #C8D9CB;
+}
+
+.opsi button:hover {
+	color: #eaecf0;
+	background-color: #465575;
+}
+
+.warning_opsi {
+	color: #0b2356;
+	font-weight: bold;
+	text-align: center;
+}
+
+.input_data{
+	font-size: 12px;
+    font-weight: bold;
+    max-width:500px;
+	max-height: 500px;
+    display: flex;
+    flex-direction: column; /* Susun elemen secara vertikal */
+	border: 1px solid #0b2356;
+	margin-top: 10px;
+	border-radius:7px;
+	align-items: center;
+	box-shadow: 5px 5px 5px #465575;
+}
+
+.input_data label{
+   color: #0b2356;
+	float: left;
+	margin-top: 8px;
+	margin-left: 5px;
+}
+
+
+.input_data input[type="checkbox"] {
+    width: auto; /* Jangan terlalu lebar untuk checkbox */
+	margin-top: 6px;
+}
+
+.kotak {
+	float: right;
+	margin-top: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+	
+}
+
+.input_data button{
+	margin-bottom: 5px;
+	border-radius: 5px;
+}
+
+.input_data button:hover{
+	color: #fbfbfb;
+	background-color: #0b2356;
+	
+}
+
+
+
+
+
+
+
+
+
